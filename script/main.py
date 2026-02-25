@@ -74,3 +74,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    print("Script execution completed. Closing window in 5 seconds...")
+    time.sleep(5)
