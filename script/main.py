@@ -47,7 +47,7 @@ except AttributeError:
 
 def main():
     global _driver
-    _driver = get_undetected_driver(headless=False)
+    _driver = get_undetected_driver(headless=True)
     try:
         login(_driver)
         navigate_to_Instructors_listings(_driver)
