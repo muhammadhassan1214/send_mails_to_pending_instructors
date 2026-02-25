@@ -2,7 +2,6 @@ import time
 import random
 import signal
 import atexit
-from dotenv import load_dotenv
 
 from utils.api.get_pending_requests import get_pending_requests
 from utils.mail_sender.email_sender import send_email
@@ -12,8 +11,6 @@ from utils.automation import (
     capture_jwt_token, login,
     navigate_to_Instructors_listings
 )
-
-load_dotenv()
 
 # Global reference so cleanup handlers can access it
 _driver = None
